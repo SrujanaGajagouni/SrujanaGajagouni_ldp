@@ -14,7 +14,7 @@ public class LargestElement {
             array[i] = scanner.nextInt();
         }
 
-        
+        int max = findLargest(array);
         System.out.println("Largest element: " + max);
 
         scanner.close();
