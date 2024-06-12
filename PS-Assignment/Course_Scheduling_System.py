@@ -36,3 +36,18 @@ if __name__ == "__main__":
     topological_order = topological_sort(graph)
     print("Topological sorting order of courses:")                                                # Intro,DS,AdvDS,Algo,ML
     print(topological_order)
+
+"""
+Sample Input:
+Number of courses:5
+course_name    no._of_prerequisites  prerequisite_name1  prerequisite_name1
+Intro              0                 
+DS                 1                   Intro
+AdvDS              1                    DS
+Alg                1                    DS
+ML                 2                   AdvDS               Alg
+
+Sample Output:
+['Intro','DS','AdvDS','Alg'.'ML']
+
+"""
