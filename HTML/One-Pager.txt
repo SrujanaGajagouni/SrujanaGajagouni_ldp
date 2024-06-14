@@ -1,0 +1,58 @@
+                                   HTML
+ 
+HTML stands for Hypertext Markup Language. It's the standard markup language used to create web pages. HTML describes the structure of a web page using a series of elements, which are represented by tags enclosed in angle brackets.
+<!DOCTYPE html> defines the document type and version of HTML being used.
+<html> is the root element of the HTML document.
+<head> contains meta-information about the document, such as its title.
+<title> sets the title of the web page, which appears in the browser's title bar or tab.
+<body> contains the content of the web page that will be displayed in the browser.
+<h1>, <h2>, <h3>, <h4>, <h5>, <h6> These tags represent headings of different levels and sublevels.
+<p> This tag defines a paragraph of text.
+<a> This tag creates a hyperlink, allowing you to link to another web page or a specific location within the same page.
+<a href=”#” target=”_blank”></a>
+target specifies where to open link like _blank, _self, _child, _top
+<img>: This tag embeds an image into the HTML document.
+<img src=” ” alt=”Sample Description”>
+<ol> and <ul>: These tags define ordered and unordered lists, respectively.
+Ordered list provides the sequence of numbers or letters to list in an order.
+Unordered list provides the lit items with bullet points..
+<li>: This tag defines a list item within an ordered or unordered list.
+<dl>: Defines a description list.
+<dt>: Defines a term or name in a description list.
+<dd>: Defines the description of a term or name in a description list.
+<div>: This tag defines a division or section within an HTML document. It is often used for styling purposes or to group together related elements.
+<span>: This tag is similar to <div> but is an inline element rather than a block-level element.
+<!--comment description --> : defines comment
+The <b> tag specifies bold text without any extra importance.
+The <i> tag specifies italic text .
+<mark>: Highlights text, typically for relevance or reference.
+<small>: Renders text in a smaller font size.
+<del>: Indicates deleted or removed text.
+<ins>: Indicates inserted or added text.
+<sub>: Renders text as subscript, typically for chemical formulas or footnotes.
+<sup>: Renders text as superscript, commonly used for exponents or footnotes.
+The <br> tag inserts a single line break. It is a self closing tag.
+The <pre> element defines preformatted text.
+The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+<em>: Emphasizes text by italicizing it.
+<strong>: Indicates strongly emphasized text by making it bold.
+The <nav> tag defines a set of navigation links.The <nav> element is intended only for major blocks of navigation links.
+The <section> tag defines a section in a document.
+The <style> tag is used to define style information (CSS) for a document. Inside the <style> element you specify how HTML elements should render in a browser.
+The <sub> tag defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O.
+The <sup> tag defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes.
+The <table> tag defines an HTML table. 
+<thead>: Groups the header rows in an HTML table.
+<tbody>: Groups the body content (data rows) in an HTML table.
+<tfoot>: Defines the footer rows in an HTML table.
+<tr>: Defines a row within a table.
+<td>: Defines a cell within a table row for regular data.
+<th>: Defines a cell within a table row for header data.
+The <video> tag is used to embed video content in a document, such as a movie clip or other video streams.
+The <form> tag is used to create an HTML form for user input. The <form> element can contain one or more of the following form elements: <input> <textarea> <button> <select> <option> <label>
+ 
+
+
+
+
+https://docs.google.com/document/d/1vvpMINfuDYZWZDd_HWkc8axHMIFwoG40EKPfXTg5rBQ/edit?usp=sharing
