@@ -1,0 +1,124 @@
+/* CSS for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(235, 217, 217);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* CSS for headings */
+  h1 {
+    color: rgb(3, 3, 118);
+    text-align: center;
+  }
+  
+  h2 {
+    color: rgb(0, 128, 128);
+  }
+  
+  h3 {
+    color: rgb(165, 42, 42);
+  }
+  
+  /* CSS for paragraphs */
+  p {
+    color: #a7a5a5;
+  }
+  /* CSS for paragraphs::Pseudoelemnts */
+  p::selection{
+    color: #f0f8ff;
+    background-color: rgb(28, 27, 25);
+  }
+  
+  /* CSS for links */
+  a:link {
+    color: rgb(165, 92, 125);
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(75, 0, 130);
+  }
+  
+  a:hover {
+    color: #ff0000;
+  }
+  
+  a:active {
+    color: rgb(0, 128, 0);
+  }
+  
+  /* CSS for lists */
+  ul, ol {
+    color: #696969;
+    list-style-type: square;
+  }
+  
+  /* CSS for images */
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* CSS for div IDs */
+  #git, #ProblemSolving, #HTML {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  #git h2, #ProblemSolving h2, #HTML h2 {
+    color: rgb(0, 128, 128);
+  }
+  
+  #git p, #ProblemSolving p, #HTML p {
+    color: rgb(105, 105, 105);
+  }
+  /* CSS for tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+  }
+  
+  th, td {
+    border: 1px solid rgb(211, 211, 211);
+    padding: 8px;
+  }
+  
+  th {
+    background-color: rgb(149, 146, 146);
+    text-align: left; /* Align text to the left in header cells */
+  }
+form {
+    width: 300px;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(76, 175, 80);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="text"]:focus {
+    background-color: #d4e69c;
+    
+}
+
+  
+  
+  
