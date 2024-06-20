@@ -1,0 +1,54 @@
+                         CSS
+
+CSS (Cascading Style Sheets) is a language used for describing the presentation of HTML and XML documents.
+It controls the visual aspects of web pages, including layout, colors, fonts, and spacing.
+
+color: Sets the color of text content.
+background-color: Defines the background color behind an element's content.
+border: Specifies the properties (width, style, color) of an element's border.
+padding: Adds space between an element's content and its border.
+margin: Controls the space outside an element's border.
+position: Specifies the positioning method of an element.
+display: Defines how an element behaves in the layout (e.g., block, inline, flex)..
+width: Sets the width of an element.
+height: Sets the height of an element.
+font-family: Specifies the font family or typeface for text.
+font-size: Sets the size of the font used for text.
+font-weight: Specifies the thickness or boldness of characters in text.
+font-style: Sets the style of the font (normal, italic, oblique).
+text-align: Aligns text horizontally within its container (left, right, center, justify).
+line-height: Sets the height of a line of text.
+letter-spacing: Controls the space between characters in text.
+word-spacing: Sets the space between words in text.
+text-transform: Controls the capitalization of text (uppercase, lowercase, capitalize).
+white-space: Specifies how white space inside an element is handled.
+cursor: Defines the type of cursor to display when hovering over an element.
+list-style: Sets the style of list markers (bullets, numbers) for list items.
+outline: Sets the style of an element's outline (a line around the element outside the border).
+opacity: Specifies the transparency level of an element.
+flex-direction: Defines the direction in which flex items are placed in a flex container (row, row-reverse, column, column-reverse).
+flex-wrap: Specifies whether flex items should wrap or not (nowrap, wrap, wrap-reverse).
+flex-flow: Shorthand for setting both flex-direction and flex-wrap properties.
+justify-content: Aligns flex items along the main axis of the flex container (flex-start, flex-end, center, space-between, space-around).
+align-items: Aligns flex items along the cross axis of the flex container (flex-start, flex-end, center, baseline, stretch).
+align-self: Overrides the align-items value for a single flex item.
+flex: Specifies the flexibility of a flex item (grow factor, shrink factor, basis).
+box-shadow: Adds a shadow effect around an element's frame.
+z-index: Specifies the stacking order of positioned elements.
+Linear Gradient: Creates a gradient that transitions linearly between colors along a straight line.
+Radial Gradient: Creates a gradient that transitions between colors radially from a specified center.
+Repeating Linear Gradient: Repeats the linear gradient pattern horizontally, vertically, or both.
+Repeating Radial Gradient: Repeats the radial gradient pattern from a specified center.
+grid-template-columns: Defines the number and size of columns in a grid container.
+grid-template-rows: Defines the number and size of rows in a grid container.
+grid-column: Specifies the start and end positions of a grid item across columns.
+grid-row: Specifies the start and end positions of a grid item across rows.
+grid-area: Creates a named grid area that a grid item can be placed into.
+grid-gap: Sets the size of the gap between grid columns and rows.
+grid-template-areas: Defines named grid areas for laying out grid items.
+
+
+
+
+
+https://docs.google.com/document/d/1ruCUsR62GWEGC0yC8PP1m149_QUpud3HiOSny3uep10/edit?usp=sharing

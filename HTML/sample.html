@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV_INTERN</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>COURSE STRUCTURE</h1>
+        <nav>
+            <ul>
+                <li><a href="#git">Git</a></li>
+                <li><a href="#ProblemSolving">Problem Solving</a></li>
+                <li><a href="#HTML">HTML</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <Section class="flex-container">
+        <div id="git">
+            <h2>About Git</h2>
+            <p>Git is a <strong>distributed version control system</strong> used for tracking changes in source code during software development. It allows multiple developers to collaborate on projects, manage code revisions, and maintain a complete history of changes, facilitating team coordination and code management.</p>
+            <a href="https://git-scm.com/docs" target="_blank">
+                <img src="https://1000logos.net/wp-content/uploads/2020/08/Git-Logo.png" alt="learn about git" width="150" height="150">
+            </a>
+        </div>
+
+        <div id="ProblemSolving">
+            <h2>About Problem Solving</h2>
+            <p>Problem-solving entails identifying, analyzing, and resolving challenges to achieve specific goals or outcomes.<hr>Computational thinking involves systematically breaking down problems, recognizing patterns, and devising algorithmic solutions, enabling efficient problem-solving across various domains.</p>
+            <a href="https://asq.org/quality-resources/problem-solving">Learn more about problem solving</a><br><br>
+            <img src="https://miro.medium.com/max/5100/1*tSLOJgkYxCsVQ0mo00493w.png" alt="Pillars of Computational Thinking" style="width:200px;height:150px">
+            <h3>Sub topics of Problem Solving</h3>
+            <ol>
+                <li>Michigan</li>
+                <li>Penn</li>
+                <li>Stanford</li>
+            </ol>
+        </div>
+
+        <div id="HTML">
+            <h2>About HTML</h2>
+            <p>HTML is the <em>backbone</em> of web development, used to structure and present content on the internet. It utilizes tags to define elements such as headings, paragraphs, images, links, and forms.</p><br><br>
+            <p>
+            It uses tags to define the structure and content of a webpage.
+            Tags are enclosed in angle brackets and come in pairs (opening and closing).
+            HTML documents consist of elements like p for paragraphs, h1 to h6 for headings, and img for images.
+            It supports creating lists, tables, links, forms, and semantic elements for better accessibility and SEO.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/HTML" style="color:brown" >Learn more about HTML</a><br><br>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Use</thth>    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>p</td>
+                        <td>It is used to define paragraphs of text.</td>
+                    </tr>
+                    <tr>
+                        <td>em</td>
+                        <td>It is used to emphasize text, typically by rendering it in italics. </td>
+                    </tr>
+                    <tr>
+                        <td>strong</td>
+                        <td> It typically renders the enclosed text in bold.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </Section>
+
+    <footer>
+        <form action="/submit" method="post">
+            <label for="fname"><strong>First name:</strong></label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </footer>
+</body>
+</html>
