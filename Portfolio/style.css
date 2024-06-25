@@ -1,0 +1,210 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    background-image: url(https://i.pinimg.com/originals/0e/39/c2/0e39c256714a4b7c0299323a82701647.jpg);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(to right, #275586, #6cc2de);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* CSS for links */
+a:link {
+    color: rgb(249, 241, 245);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(206, 192, 198);
+}
+
+a:hover {
+    color: #5fc468;
+}
+
+a:active {
+    color: rgb(182, 161, 58);
+}
+
+/* Container section styles */
+.Container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    display: none;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+/* Display active section based on :target */
+.Container:target {
+    display: block;
+}
+
+.Container > div {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.Container > div h2 {
+    color: #007bff;
+    text-shadow: 2px 2px 4px #8cc9b3;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background: linear-gradient(to right, #325d8b, #6ec1dd);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 97%;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer ul li a i {
+    margin-right: 5px;
+}
+
+/* Content and Image layout */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.text h1 {
+    color: #007bff;
+    font-size: 30px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 20px;
+    color: #666;
+}
+
+.image {
+    text-align: center;
+    margin-top: 20px;
+}
+.image h5{
+    text-align: center;
+    
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 15px 15px 0px rgba(76, 74, 74, 0.1);
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    /* Adjustments for tablets and larger screens */
+    .content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .text {
+        flex: 1;
+        padding-right: 20px;
+        text-align: left;
+    }
+
+    .image {
+        flex: 1;
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Adjustments for larger screens */
+    .Container {
+        padding: 40px;
+    }
+
+    .text h1 {
+        font-size: 36px;
+    }
+
+    .text p {
+        font-size: 22px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
