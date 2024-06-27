@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Body styles */
+        body {
+            background-image: url(https://i.pinimg.com/originals/0e/39/c2/0e39c256714a4b7c0299323a82701647.jpg);
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark gray text color */
+            padding: 20px;
+        }
+        
+        /* Header styles */
+        header {
+            background: linear-gradient(to right, #275586, #6cc2de);
+            color: #fff; /* White text color */
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        header nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        header nav ul li {
+            margin: 0 10px;
+        }
+        
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        /* Projects section styles */
+        .Projects {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* width: 100%; */
+        }
+        
+        .Projects > div {
+            width: 800px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .Projects div h2, .Projects div h3 {
+            color: #007bff; /* Primary blue heading */
+            margin-bottom: 10px;
+        }
+        
+        .Projects > div p {
+            color: #666; /* Gray text color */
+        }
+        .Projects ul li {
+            list-style-type: none;
+            margin: 0 10px;
+        }
+        
+        /* Footer styles */
+        footer {
+            background: linear-gradient(to right, #325d8b, #6ec1dd);
+            color: #fff; /* White text color */
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 97%;
+        }
+
+        footer ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        footer ul li {
+            list-style-type: none;
+            margin: 0 10px;
+        }
+
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        footer ul li a i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="portfolio.html">Home</a></li>
+                <li><a href="#Gender and Age Detection">Gender and Age Detection</a></li>
+                <li><a href="#Sign Language Detection">Sign Language Detection</a></li>
+                <li><a href="#Drug Adverse Reaction">Drug Adverse Reaction</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="Projects">
+        <div id="Gender and Age Detection">
+            <h2>Gender and Age Detection Using Face Recognition </h2>
+            <p>Developed a Machine Learning model for classification of gender
+                and age of a person by recognizing face.</p>
+            <h3>Technologies Used</h3>
+            <ul>
+                <li>Machine Learning</li>
+                <li> Open CV</li>
+                <li>CAFEE Models</li>
+                <li>Python</li>
+            </ul>
+        </div>
+        <div id="Sign Language Detection">
+            <h2>Sign Language Detection Using Action Recognition</h2>
+            <p>Developed a prototype for detecting the sign language performed
+                by recognizing the action.</p>
+            <h3>Technologies Used</h3>
+            <ul>
+                <li>Machine Learning</li>
+                <li> Open CV</li>
+                <li>Tensor Flow</li>
+                <li>LSTM</li>
+                <li>Python</li>
+            </ul>
+        </div>
+        <div id="Drug Adverse Reaction">
+            <h2>AI-Enhanced Drug Adverse Reaction Monitoring</h2>
+            <p>Designed a web application for monitoring adverse drug reactions
+                and predicting the side effects</p>
+            <h3>Technologies Used</h3>
+            <ul>
+                <li>Naranjo Algorithm</li>
+                <li>React JS</li>
+                <li>Mongo DB</li>
+                <li>NLP</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/gajagouni-srujana-6a871121a/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://github.com/SrujanaGajagouni" target="_blank"><i class="fa-brands fa-square-github"></i> GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
