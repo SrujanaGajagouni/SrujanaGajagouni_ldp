@@ -1,0 +1,23 @@
+// Define a function that takes another function as a parameter
+function greet(name, callback) {
+    console.log(`Hello, ${name}!`);
+    callback();
+}
+// Define a function that will be passed as a parameter
+function ask() {
+    console.log('How are you?');
+}
+greet('Ram', ask);// Call the greet function and pass sayGoodbye as a callback
+
+
+console.log('\n');
+
+
+// Arrow function to return a 2-letter string from first letters of firstName and lastName
+const getInitials = (firstName, lastName) => {
+    let firstInitial = firstName.charAt(0);
+    let lastInitial = lastName.charAt(0);
+    return `${firstInitial}${lastInitial}`;
+};
+console.log(getInitials('Roger', 'Waters')); // Output: RW
+console.log(getInitials('Srujana', 'Gajagouni')); // Output: SG
