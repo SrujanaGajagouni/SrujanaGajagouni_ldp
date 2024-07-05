@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Animation Example</title>
+    <style>
+        /* CSS for the container */
+        .container {
+            width: 300px;
+            background-color: #d1cfcd;
+            margin: 50px 50px;
+            text-align: center;
+        }
+
+        /* CSS for the animated element */
+        .animated {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 20px auto;
+            
+        }
+
+        /* CSS for the button */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Basic Animation Example</h2>
+
+    <div class="container">
+        <div class="animated" id="animatedBox"></div>
+        <button onclick="changeColor()">Change Color</button>
+    </div>
+
+    <script>
+        function changeColor() {
+            var box = document.getElementById("animatedBox");
+
+            // Generate a random color
+            var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+
+            // Apply the new color with animation
+            box.style.backgroundColor = randomColor;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookies Example</title>
+</head>
+<body>
+
+<script>
+  // Function to set a cookie
+  function setCookie(cookieName, cookieValue, expirationDays, cookiePath) {
+    const d = new Date();
+    d.setTime(d.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + d.toUTCString();
+    document.cookie = cookieName + "=" + cookieValue + "; " + expires + "; path=" + cookiePath;
+    console.log(`Cookie set: ${cookieName}=${cookieValue}`);
+  }
+
+  // Set cookies
+  setCookie("username", "john_doe", 7, "/");
+  setCookie("language", "en_US", 14, "/");
+  setCookie("theme", "dark", 30, "/");
+
+  // Function to read and log all cookies after a delay
+  function logCookies() {
+    console.log("All Cookies:", document.cookie);
+  }
+
+  // Log all cookies after a short delay to ensure they are set
+  setTimeout(logCookies, 1000); // Adjust delay as needed
+</script>
+
+</body>
+</html>
