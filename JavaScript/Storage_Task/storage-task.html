@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Score Counter App</title>
+</head>
+<body>
+  <h1>Score Counter</h1>
+  <div>
+    <h2>Local Score: <span id="localScore">0</span></h2>
+    <button onclick="incrementLocalScore()">Increment Local Score</button>
+  </div>
+  <div>
+    <h2>Session Score: <span id="sessionScore">0</span></h2>
+    <button onclick="incrementSessionScore()">Increment Session Score</button>
+  </div>
+
+  <script>
+    // Function to increment Local Score
+    function incrementLocalScore() {
+      let localScore = localStorage.getItem('localScore');
+      localScore = localScore ? parseInt(localScore) + 1 : 1;
+      localStorage.setItem('localScore', localScore);
+      document.getElementById('localScore').textContent = localScore;
+    }
+
+    // Function to increment Session Score
+    function incrementSessionScore() {
+      let sessionScore = sessionStorage.getItem('sessionScore');
+      sessionScore = sessionScore ? parseInt(sessionScore) + 1 : 1;
+      sessionStorage.setItem('sessionScore', sessionScore);
+      document.getElementById('sessionScore').textContent = sessionScore;
+    }
+
+    // Initialize scores on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      // Local Score initialization
+      let localScore = localStorage.getItem('localScore');
+      if (localScore) {
+        document.getElementById('localScore').textContent = localScore;
+      }
+
+      // Session Score initialization
+      let sessionScore = sessionStorage.getItem('sessionScore');
+      if (sessionScore) {
+        document.getElementById('sessionScore').textContent = sessionScore;
+      }
+    });
+  </script>
+</body>
+</html>
