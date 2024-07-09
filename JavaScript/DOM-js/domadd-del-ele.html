@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manipulating HTML Elements</title>
+</head>
+<body>
+
+<div id="container">
+    <p id="initialParagraph">Initial content goes here.</p>
+</div>
+
+<script>
+    // Create a new <p> element
+    const newParagraph = document.createElement("p");
+    newParagraph.textContent = "This is a new paragraph created using JavaScript.";
+
+    // Append the new paragraph to the existing <div> with id="container"
+    document.getElementById("container").appendChild(newParagraph);
+
+    // Replace the existing content in the <div> with a new <p> element
+    const container = document.getElementById("container");
+    const oldParagraph = container.querySelector("#initialParagraph");
+
+    // Create a new <p> element to replace the old one
+    const replacementParagraph = document.createElement("p");
+    replacementParagraph.textContent = "This is the replacement paragraph.";
+
+    // Replace oldParagraph with replacementParagraph
+    container.replaceChild(replacementParagraph, oldParagraph);
+</script>
+
+</body>
+</html>

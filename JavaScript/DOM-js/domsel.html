@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>DOM Selectors</title>
+        <style>
+            .container{
+                color:#f0f8ff
+            }
+        </style>
+    </head>
+    <body>
+        <p id="para">Hello! World</p>
+        <div class="container">
+            <h3>Header 3</h3>
+            <h3>Header 3</h3>
+        </div>
+        <script>
+            let x=document.getElementById("para");//getElement by ID
+            console.log(x);
+            console.log("\n");
+            let y=document.getElementsByClassName("container");//get Element by ClassName
+            console.log(y);
+            console.log("\n");
+            let z=document.getElementsByTagName("h3");//get element by TAgName
+            console.log(z);
+            console.log("\n");
+            let a=document.querySelector(".container");//QuerySelector
+            console.log(a);
+            console.log("\n");
+        </script>
+    </body>
+</html>

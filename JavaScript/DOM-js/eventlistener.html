@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>addEventListener Example</title>
+  <style>
+    body {
+      background-color: #f0f8ff; /* Alice Blue */
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const button = document.getElementById('myButton');
+
+      button.addEventListener('click', function() {
+        alert('Button clicked using addEventListener!');
+      });
+
+      button.addEventListener('keyup', function() {
+        document.body.style.backgroundColor = 'pink';
+      });
+
+      button.addEventListener('click', function() {
+        document.body.style.backgroundColor = 'brown';
+      });
+    });
+  </script>
+</head>
+<body>
+  <button id="myButton">Click me (addEventListener)</button>
+</body>
+</html>

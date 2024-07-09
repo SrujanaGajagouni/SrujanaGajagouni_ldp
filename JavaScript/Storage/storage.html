@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Local Storage Example</title>
+</head>
+<body>
+    <label for="bgcolor">Background Color:</label>
+    <input type="text" id="bgcolor" placeholder="Enter background color">
+    <br><br>
+    
+    <label for="font">Font Family:</label>
+    <input type="text" id="font" placeholder="Enter font family">
+    <br><br>
+
+    <button onclick="saveStyles()">Save Styles</button>
+
+    <script>
+        // Function to populate styles from local storage or set defaults
+        function setStylesFromLocalStorage() {
+            const currentColor = localStorage.getItem("bgcolor") || "ffffff";
+            const currentFont = localStorage.getItem("font") || "Arial";
+
+            document.getElementById("bgcolor").value = currentColor;
+            document.getElementById("font").value = currentFont;
+
+            applyStyles(currentColor, currentFont);
+        }
+
+        // Apply styles to elements
+        function applyStyles(bgColor, font) {
+            document.body.style.backgroundColor = `#${bgColor}`;
+            document.body.style.fontFamily = font;
+        }
+
+        // Function to save styles to local storage
+        function saveStyles() {
+            const bgColor = document.getElementById("bgcolor").value;
+            const font = document.getElementById("font").value;
+
+            localStorage.setItem("bgcolor", bgColor);
+            localStorage.setItem("font", font);
+
+            applyStyles(bgColor, font);
+        }
+
+        // Initial setup after the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            setStylesFromLocalStorage();
+        });
+    </script>
+</body>
+</html>

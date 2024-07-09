@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validators</title>
+    <style>
+        .warning {
+            color: red;
+            font-size: 80%;
+            margin-left: 10px;
+            display: none; /* Initially hide warnings */
+        }
+    </style>
+</head>
+<body>
+    <form name="myform" action="forms.php" onsubmit="return validate()">
+        <label for="Fullname">Enter your name:</label>
+        <input type="text" id="Fullname" name="name" oninput="validateName()">
+        <span id="nameWarning" class="warning">Name is required and should contain only letters.</span>
+        <br><br>
+        
+        <label for="password">Enter your Password:</label>
+        <input type="password" id="password" name="password" oninput="validatePassword()">
+        <span id="passwordWarning" class="warning">Password should be 8-13 characters long and include at least one uppercase letter, one lowercase letter, one digit, and one special character.</span>
+        <br><br>
+        
+        <label for="Email">Enter your email:</label>
+        <input type="email" id="Email" name="email" oninput="validateEmail()">
+        <span id="emailWarning" class="warning">Email should be a valid Gmail address (e.g., example@gmail.com).</span>
+        <br><br>
+        
+        Gender:
+        <input type="radio" id="female" name="gender" value="female" onchange="validateGender()">
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" value="male" onchange="validateGender()">
+        <label for="male">Male</label>
+        <span id="genderWarning" class="warning">Gender is required.</span>
+        <br><br>
+        
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateName() {
+            let name = document.getElementById('Fullname').value.trim();
+            let nameWarning = document.getElementById('nameWarning');
+
+            if (name === "") {
+                nameWarning.style.display = 'inline'; // Show warning if name is empty
+            } else if (!/^[a-zA-Z]+$/.test(name)) {
+                nameWarning.innerText = "Name should contain only letters.";
+                nameWarning.style.display = 'inline'; // Show warning for invalid characters
+            } else {
+                nameWarning.style.display = 'none'; // Hide warning when condition is met
+            }
+        }
+
+        function validatePassword() {
+            let pass = document.getElementById('password').value.trim();
+            let passwordWarning = document.getElementById('passwordWarning');
+
+            if (pass === "") {
+                passwordWarning.style.display = 'inline'; // Show warning if password is empty
+            } else if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,13}$/.test(pass)) {
+                passwordWarning.style.display = 'inline'; // Show warning for invalid password format
+            } else {
+                passwordWarning.style.display = 'none'; // Hide warning when condition is met
+            }
+        }
+
+        function validateEmail() {
+            let email = document.getElementById('Email').value.trim();
+            let emailWarning = document.getElementById('emailWarning');
+
+            if (email === "") {
+                emailWarning.style.display = 'inline'; // Show warning if email is empty
+            } else if (!email.endsWith("@gmail.com")) {
+                emailWarning.style.display = 'inline'; // Show warning for invalid email format
+            } else {
+                emailWarning.style.display = 'none'; // Hide warning when condition is met
+            }
+        }
+
+        function validateGender() {
+            let genderWarning = document.getElementById('genderWarning');
+            let femaleChecked = document.getElementById('female').checked;
+            let maleChecked = document.getElementById('male').checked;
+
+            if (!femaleChecked && !maleChecked) {
+                genderWarning.style.display = 'inline'; // Show warning if gender is not selected
+            } else {
+                genderWarning.style.display = 'none'; // Hide warning when condition is met
+            }
+        }
+
+        function validate() {
+            validateName();
+            validatePassword();
+            validateEmail();
+            validateGender();
+
+            // Check if all warnings are hidden (conditions are met)
+            let warnings = document.getElementsByClassName('warning');
+            for (let i = 0; i < warnings.length; i++) {
+                if (warnings[i].style.display !== 'none') {
+                    return false; // Prevent form submission if any warning is visible
+                }
+            }
+
+            return true; // Allow form submission if all conditions are met
+        }
+    </script>
+</body>
+</html>

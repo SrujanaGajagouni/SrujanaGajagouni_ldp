@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    Name: <input type="text" name="fname" id="fname">
+    <br><br>
+    Pin: <input type="password" name="pin" id="pin">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+    function validateForm() {
+        // Fetching input values
+        let x = document.forms["myForm"]["fname"].value.trim();
+        let y = document.forms["myForm"]["pin"].value.trim(); // Fixed: Access the value of pin directly
+
+        // Regular expression to validate only letters
+        let lettersOnly = /^[A-Za-z]+$/;
+
+        // Regular expression to validate only numbers
+        let numOnly = /^[0-9]+$/;
+
+        // Data validation
+        if (x === "") {
+            alert("Name must be filled out");
+            return false;
+        }
+
+        if (!x.match(lettersOnly)) {
+            alert("Name should contain only letters");
+            return false;
+        }
+
+        if (y === "") {
+            alert("Pin must be filled out");
+            return false;
+        }
+
+        if (!y.match(numOnly)) {
+            alert("Pin should contain only numbers");
+            return false;
+        }
+
+        // Form submission allowed if all validations pass
+        return true;
+    }
+</script>
+
+</body>
+</html>
