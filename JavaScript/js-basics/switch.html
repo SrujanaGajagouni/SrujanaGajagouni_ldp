@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement in JavaScript</title>
+</head>
+<body>
+
+    <h1>Switch Statement in JavaScript</h1>
+
+    <script>
+        // Example of switch statement in JavaScript
+        
+        // Define a variable
+        let day = "Monday";
+
+        // Example 1: Simple switch statement
+        switch (day) {
+            case "Monday":
+                console.log("Today is Monday.");
+                break;
+            case "Tuesday":
+                console.log("Today is Tuesday.");
+                break;
+            case "Wednesday":
+                console.log("Today is Wednesday.");
+                break;
+            case "Thursday":
+                console.log("Today is Thursday.");
+                break;
+            case "Friday":
+                console.log("Today is Friday.");
+                break;
+            default:
+                console.log("It's the weekend!");
+        }
+
+        // Example 2: Using switch with multiple cases
+        let fruit = "Apple";
+        switch (fruit) {
+            case "Apple":
+            case "Banana":
+            case "Orange":
+                console.log("It's a fruit!");
+                break;
+            case "Carrot":
+                console.log("It's a vegetable!");
+                break;
+            default:
+                console.log("Unknown food item.");
+        }
+    </script>
+
+</body>
+</html>
