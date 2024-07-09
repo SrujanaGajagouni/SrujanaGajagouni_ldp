@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Billing System</title>
+<link rel="stylesheet" type="text/css" href="style3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="tables">
+    <h2>Tables</h2>
+    <div style="position: relative;">
+      <input type="text" id="searchTables" placeholder="Search tables...">
+      <span class="clear-input" id="clearSearchTables">&times;</span>
+    </div>
+    <div id="tableList">
+      <!-- Table cards will be dynamically added here -->
+    </div>
+  </div>
+
+  <div class="menu">
+    <h2>Menu</h2>
+    <div style="position: relative;">
+      <input type="text" id="searchMenu" placeholder="Search menu...">
+      <span class="clear-input" id="clearSearchMenu">&times;</span>
+    </div>
+    <div id="menuItems">
+      <!-- Menu items will be dynamically added here -->
+    </div>
+  </div>
+</div>
+
+<div id="tableDetailsModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeTableDetailsModal()">&times;</span>
+    <h2 id="tableModalTitle">Table Details</h2>
+    <div id="tableModalContent"></div>
+    <div id="totalSum">Total Sum: Rs. 0.00</div>
+    <div>
+      <button onclick="closeSessionAndGenerateBill()">Close Session (Generate Bill)</button>
+    </div>
+  </div>
+</div>
+
+<script src="rest.js"></script>
+</body>
+</html>
