@@ -1,0 +1,44 @@
+.main-container {
+    background-color: white;
+    width: 305px;
+    height: 255px;
+    padding: 12px;
+    border-radius: 12px;
+}
+.sub-container{
+    width: 285px;
+    height: 239px;
+    gap: 30px;
+}
+
+#hp{
+    margin-top: 13px;
+}
+
+#more{
+    margin-right: 9px;
+    margin-bottom: 20px;
+}
+
+.header-row {
+    padding-left: 10px;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 190px;
+}
+
+.text-column {
+    text-align: start;
+    padding-left: 10px;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.text-caption-primary {
+    color: #FF725E;
+    line-height: 2px;
+}
+.caption-2{
+    color : #656E66;
+}
+
