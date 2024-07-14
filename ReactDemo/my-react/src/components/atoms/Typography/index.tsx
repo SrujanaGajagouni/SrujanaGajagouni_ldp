@@ -1,14 +1,14 @@
 import React from 'react';
-import {Typography, TypographyProps} from '@mui/material'
+import {Typography as MuiTypography , TypographyProps} from '@mui/material'
 
 interface TypoProps extends TypographyProps{
     
 
 }
 
-const TextComponent : React.FC<TypoProps> = ({ ...props}) => {
+const Typography : React.FC<TypoProps> = ({ ...props}) => {
     return(
-        <Typography  {...props} />
+        <MuiTypography  {...props} />
     )
 }
-export default TextComponent
+export default Typography
