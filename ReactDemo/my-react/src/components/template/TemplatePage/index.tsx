@@ -1,11 +1,11 @@
 import React from 'react';
-import HpCard from '../../organism/HpCard';
+import DescriptionCard from '../../organism/DescriptionCard';
 import { Stack } from '@mui/material';
 
 const Template: React.FC = () => {
     return (
         <Stack>
-            <HpCard />
+            <DescriptionCard />
         </Stack>
     );
 };

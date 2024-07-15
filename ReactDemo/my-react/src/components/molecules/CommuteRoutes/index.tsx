@@ -1,15 +1,15 @@
 import React from "react";
-import bike from '../../../../public/assets/icons/bike.svg';
-import bus from '../../../../public/assets/icons/bus.svg';
-import car from '../../../../public/assets/icons/car.svg';
-import train from '../../../../public/assets/icons/train.svg';
+import '../../../../public/assets/icons/bike.svg';
+import '../../../../public/assets/icons/bus.svg';
+import '../../../../public/assets/icons/car.svg';
+import '../../../../public/assets/icons/train.svg';
 import { Stack } from "@mui/material";
 import Image from "../../atoms/Image";
 import Typography from "../../atoms/Typography";
 import './index.css'; 
 
 
-const ImageCard: React.FC = () => {
+const CommuteRoutes: React.FC = () => {
     return (
             <Stack className="container">
                 <Stack className="title">
@@ -17,10 +17,10 @@ const ImageCard: React.FC = () => {
                 </Stack>
                 <Stack className="image-row">
                     <Stack className="image-container">
-                        <Image src={bike} alt='bike' />
-                        <Image src={bus} alt='bus' />
-                        <Image src={car} alt='car' />
-                        <Image src={train} alt='train' />
+                        <Image src="../../../../public/assets/icons/bike.svg" alt='bike' />
+                        <Image src="../../../../public/assets/icons/bus.svg" alt='bus' />
+                        <Image src="../../../../public/assets/icons/car.svg" alt='car' />
+                        <Image src="../../../../public/assets/icons/train.svg" alt='train' />
                     </Stack>
                     <Stack className="time">
                         <Typography variant='caption' >1hr 36 mins ago</Typography>   
@@ -31,4 +31,4 @@ const ImageCard: React.FC = () => {
     );
 }
 
-export default ImageCard;
+export default CommuteRoutes;
