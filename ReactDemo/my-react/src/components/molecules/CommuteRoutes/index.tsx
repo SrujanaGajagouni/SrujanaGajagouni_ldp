@@ -17,10 +17,10 @@ const CommuteRoutes: React.FC = () => {
                 </Stack>
                 <Stack className="image-row">
                     <Stack className="image-container">
-                        <Image src="../../../../public/assets/icons/bike.svg" alt='bike' />
-                        <Image src="../../../../public/assets/icons/bus.svg" alt='bus' />
-                        <Image src="../../../../public/assets/icons/car.svg" alt='car' />
-                        <Image src="../../../../public/assets/icons/train.svg" alt='train' />
+                        <Image src="/assets/icons/bike.svg" alt='bike' />
+                        <Image src="/assets/icons/bus.svg" alt='bus' />
+                        <Image src="/assets/icons/car.svg" alt='car' />
+                        <Image src="/assets/icons/train.svg" alt='train' />
                     </Stack>
                     <Stack className="time">
                         <Typography variant='caption' >1hr 36 mins ago</Typography>   

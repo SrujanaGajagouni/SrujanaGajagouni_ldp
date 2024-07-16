@@ -12,8 +12,8 @@ const DescriptionCard: React.FC = () => {
             <Stack className="main-container">
                 <Stack className="sub-container">
                     <Stack className="header-row">
-                        <Image src="../../../../public/assets/icons/hp.svg" alt="Hp" id='hp'/>
-                        <Image src="../../../../public/assets/icons/more.svg" alt="More" id='more' />
+                        <Image src="/assets/icons/hp.svg" alt="Hp" id='hp'/>
+                        <Image src="/assets/icons/more.svg" alt="More" id='more' />
                     </Stack>
                     <Stack className="text-column">
                         <Typography variant="subtitle1">User Experience Designer</Typography>

@@ -4,9 +4,17 @@ import { createTheme } from "@mui/material";
 const theme = createTheme({
     typography: {
         subtitle1: {
-            color: '#373C38',
-            lineHeight: 1.5,
+            font: 'Montserrat',
+            fontSize: '16px',
+            fontWeight: 600,
+            lineHeight: '24px',
+            textAlign: 'left',
+            color: '#373C38'
+            
         },
+        caption: {
+            font: "Montserrat",
+        }
         
         
     },
