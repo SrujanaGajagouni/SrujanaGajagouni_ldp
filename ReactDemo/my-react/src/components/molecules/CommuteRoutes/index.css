@@ -1,8 +1,8 @@
 .title {
     text-align: start ;
     padding-left: 9px ;
-    line-height: 0.5px;
     color: #373C38;
+    
     
 }
 
@@ -14,12 +14,13 @@
     padding-left: 9px ;
     display: flex;
     flex-direction: row !important; 
-    gap: 9.96px;
+    /* gap: 5px; */
 }
 .time{
     padding-top: 5px;
     padding-left: 50px;
     color: #373C38;
+    
     
     
 }
