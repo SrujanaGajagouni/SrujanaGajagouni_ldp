@@ -3,8 +3,6 @@ import Typography from "../../atoms/Typography";
 import { Stack } from '@mui/material';
 import Image from "../../atoms/Image";
 import CommuteRoutes from "../../molecules/CommuteRoutes";
-import '../../../../public/assets/icons/hp.svg';
-import '../../../../public/assets/icons/more.svg';
 import './index.css'; 
 
 const DescriptionCard: React.FC = () => {

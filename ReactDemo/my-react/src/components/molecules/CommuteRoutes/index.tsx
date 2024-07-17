@@ -1,8 +1,4 @@
 import React from "react";
-import '../../../../public/assets/icons/bike.svg';
-import '../../../../public/assets/icons/bus.svg';
-import '../../../../public/assets/icons/car.svg';
-import '../../../../public/assets/icons/train.svg';
 import { Stack } from "@mui/material";
 import Image from "../../atoms/Image";
 import Typography from "../../atoms/Typography";
