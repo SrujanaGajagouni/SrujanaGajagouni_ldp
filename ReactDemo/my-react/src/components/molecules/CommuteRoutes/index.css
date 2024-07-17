@@ -1,0 +1,33 @@
+.title {
+    text-align: start ;
+    padding-left: 9px ;
+    color: #373C38;
+    
+    
+}
+
+.container{
+    gap: 5px
+}
+
+.image-row {
+    padding-left: 9px ;
+    display: flex;
+    flex-direction: row !important; 
+    /* gap: 5px; */
+}
+.time{
+    padding-top: 5px;
+    padding-left: 50px;
+    color: #373C38;
+    
+    
+    
+}
+
+.image-container {
+    display: flex ;
+    flex-direction: row !important;
+    flex-grow: 1 ;
+    gap: 8px ; 
+}
