@@ -1,0 +1,9 @@
+.PriceCorrelationClass{
+    width: 397px;
+    height: 310px;
+    border-radius: 4px;
+    gap: 16px;
+    background-color: #ffffff;
+    padding: 22px;
+    justify-content: space-between;
+}
