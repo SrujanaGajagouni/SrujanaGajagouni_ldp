@@ -2,9 +2,8 @@ import { createTheme } from "@mui/material";
 
 const theme= createTheme({
     typography: {
+        fontFamily: 'Graphik, sans-serif',
         body1: {
-            
-            font: 'Graphik',
             fontSize: '16px',
             fontWeight: '600',
             lineHeight: '22px',
@@ -14,7 +13,6 @@ const theme= createTheme({
 
         },
         caption: {
-            font: 'Graphik',
             fontSize: '16px',
             fontWeight: '400',
             lineHeight: '22px',
@@ -24,7 +22,6 @@ const theme= createTheme({
 
         },
         subtitle1: {
-            font: 'Graphik',
             fontSize: '20px',
             fontWeight: '550',
             lineHeight: '30px',

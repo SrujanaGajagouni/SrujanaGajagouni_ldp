@@ -1,34 +1,48 @@
+import React from 'react';
+import { styled } from '@mui/material/styles';
+import Stack from '@mui/material/Stack';
 import Image from '../../atoms/Image';
 import Typography from '../../atoms/Typography';
-import { Stack } from '@mui/material';
-import './index.css';
+
+const Container = styled(Stack)({
+  flexDirection: 'row',
+  gap: '16px',
+});
+
+const TextContainer = styled(Stack)({
+  flexDirection: 'column',
+});
+
+const Row = styled(Stack)({
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+  width: '330px',
+});
 
 interface CryptoProps {
-    src: string;
-    alt: string;
-    name: string;
-    value: string;
-    description: string;
-    percentage: string;
+  src: string;
+  alt: string;
+  name: string;
+  value: string;
+  description: string;
+  percentage: string;
 }
 
 const CryptoDescription: React.FC<CryptoProps> = ({ src, alt, name, value, description, percentage }) => {
   return (
-    <Stack direction='row' spacing={2}>
-      <Stack>
-        <Image src={src} alt={alt} />
-      </Stack>
-      <Stack direction='column' >
-        <Stack direction='row' className='flexRow'>
+    <Container>
+      <Image src={src} alt={alt} />
+      <TextContainer>
+        <Row>
           <Typography variant='body1' label={name} />
           <Typography variant='body1' label={value} />
-        </Stack>
-        <Stack direction='row' className='flexRow'>
+        </Row>
+        <Row>
           <Typography variant='caption' label={description} />
           <Typography variant='caption' label={percentage} />
-        </Stack>
-      </Stack>
-    </Stack>
+        </Row>
+      </TextContainer>
+    </Container>
   );
 }
 
