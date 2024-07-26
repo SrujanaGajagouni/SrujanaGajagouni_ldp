@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Box, List, ListItem, ListItemText, Typography } from '@mui/material';
 import { getPosts } from '../service/postService'; 
-import { Post } from '../service/postService';
+import { IPost } from '../service/postService';
 
 const PostsList: React.FC = () => {
-  const [posts, setPosts] = useState<Post[]>([]);
+  const [posts, setPosts] = useState<IPost[]>([]);
 
   useEffect(() => {
     const fetchPosts = async () => {
