@@ -1,0 +1,31 @@
+.stack-container {
+    width: 340px;
+    height: 460px;
+    border: 1px solid black;
+    padding: 28px;
+  }
+  
+.text-primary {
+    color: #6C5DD3;
+  }
+.body-primary {
+    color: #A5A5A6;
+  }
+.body-secondary{
+    color: #E8E7F0;
+  }
+#buttonStyles{
+        background-color: #2D2D30;
+        color: white;
+        border-radius: 12px;
+}
+#buttonStyle{
+  border-radius: 12px;
+  padding-left: 15px;
+  margin: 12px;
+  padding: 15px;
+  width: 320px;
+  height:50px; 
+}
+  
+  
