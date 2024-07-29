@@ -1,0 +1,58 @@
+
+form {
+    background-color: rgb(207, 211, 211);
+    max-width: 50%;
+    padding: 10px;
+    
+    margin: 0 auto;
+    
+  }
+  
+ 
+  .form-field {
+    
+    margin-bottom: 10px;
+    width: 100%; 
+  }
+  
+  .form-field label {
+    margin-right: 5px;
+    font-weight: bold;
+  }
+  
+  
+  .form-field input, .form-field select {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+
+  button {
+    
+   
+    padding: 10px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+ 
+
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  font-weight: bold;
+  margin-top: 0.25em;
+}
+
+  
